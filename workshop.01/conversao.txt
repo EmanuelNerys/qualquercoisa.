@@ -1,0 +1,30 @@
+/* Lógico_1: */
+
+CREATE TABLE empresa (
+    fundador CLOB,
+    cnpj CLOB,
+    nome da empresa CLOB,
+    PRIMARY KEY (cnpj, nome da empresa)
+);
+
+CREATE TABLE cidade (
+    quantos clientes por regiao CLOB,
+    masculino  CLOB,
+    feminino CLOB,
+    jovens e adolecentes  CLOB,
+    PRIMARY KEY (quantos clientes por regiao, masculino , feminino)
+);
+
+CREATE TABLE funcionarios  (
+    quantidade CLOB,
+    sexo  CLOB,
+    idade  CLOB,
+    email CLOB,
+    renda financeira  CLOB,
+    PRIMARY KEY (sexo , idade )
+);
+
+CREATE TABLE lucro (
+    mes CLOB,
+    quanto faturou  CLOB PRIMARY KEY
+);
