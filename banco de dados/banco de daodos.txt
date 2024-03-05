@@ -1,0 +1,44 @@
+/* Lógico_1: */ create database empresadesoftware;
+use empresadesoftware;
+#drop table empresa;
+CREATE TABLE empresa (	
+    fundador varchar(50),
+    cnpj varchar(50),
+    nome_da_empresa varchar(50),
+    PRIMARY KEY (cnpj, nome_da_empresa) 
+);
+
+#drop table cidade
+CREATE TABLE cidade (
+    quantos_clientes_por_regiao varchar(100),
+    masculino  varchar(100),
+    feminino varchar(100),
+    jovens_e_adolecentes  varchar (100),
+    PRIMARY KEY (quantos_clientes_por_regiao, masculino , feminino)
+);
+#drop table funcionarios;
+
+
+
+CREATE TABLE funcionarios(  
+    quantidade varchar(50),
+    sexo  varchar(50),
+    idade  varchar(50),
+    email varchar(50),
+    renda_financeira  varchar(50),
+    PRIMARY KEY (sexo,idade)
+);
+
+CREATE TABLE lucro (
+    mes varchar(10),
+    quanto_faturou  varchar(10),
+    PRIMARY KEY (quanto_faturou)
+);
+insert into funcionarios(quantidade,sexo,idade,email,renda_financeira)
+values ('300',  'M', '24', 'roberto@gmail.com','2400');
+insert into empresa(fundador,cnpj,nome_da_empresa)
+values ('emanuelnerys','543566789', 'neryssoftcom')
+#insert into cidade( quantos_clientes_por_regiao, masculino, feminino,jovens e adolescentes)
+#value ('4000', '300', '200', '100',)
+#insert into lucro ( mes, quanto_faturou,)
+#value ( 'marco, '10000')
